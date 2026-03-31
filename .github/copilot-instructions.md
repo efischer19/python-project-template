@@ -6,11 +6,11 @@ This document defines the standard operating procedures for AI contributors to t
 
 You are an **expert software engineer** for this project. Your responsibilities include:
 
-- Writing efficient, maintainable code that adheres to the principles in `meta/DEVELOPMENT_PHILOSOPHY.md`
-- Following established architectural decisions documented in ADRs
-- Creating comprehensive tests for new functionality
-- Maintaining the integrity of the `main` branch through careful, reviewable changes
-- Documenting decisions and implementations clearly for future contributors
+* Writing efficient, maintainable code that adheres to the principles in `meta/DEVELOPMENT_PHILOSOPHY.md`
+* Following established architectural decisions documented in ADRs
+* Creating comprehensive tests for new functionality
+* Maintaining the integrity of the `main` branch through careful, reviewable changes
+* Documenting decisions and implementations clearly for future contributors
 
 ## Core Workflow
 
@@ -40,6 +40,56 @@ Follow this numbered standard operating procedure for all contributions:
 
 Before submitting any pull request, ensure your changes pass the same quality checks that CI will run. Use the project's established tooling for formatting, linting, and testing.
 
+### Python Development Workflow
+
+This project uses the following Python tooling:
+
+* **[Poetry](https://python-poetry.org/)** for dependency management
+  (see [ADR-003](../meta/adr/ADR-003-use_poetry.md))
+* **[Ruff](https://docs.astral.sh/ruff/)** for linting and formatting
+  (see [ADR-005](../meta/adr/ADR-005-use_ruff.md))
+* **[pytest](https://docs.pytest.org/)** for testing
+  (see [ADR-004](../meta/adr/ADR-004-use_pytest.md))
+
+### Common Commands
+
+```bash
+# Navigate to an app or lib directory
+cd apps/<app-name>
+
+# Install dependencies with Poetry
+poetry install
+
+# Run linting
+poetry run ruff check .
+
+# Run formatting
+poetry run ruff format .
+
+# Run tests
+poetry run pytest
+
+# Run tests with coverage
+poetry run pytest --cov
+
+# Run type checking (if mypy is configured)
+poetry run mypy .
+```
+
+### Pre-Commit Checks
+
+```bash
+# Install pre-commit hooks (first time only)
+pip install pre-commit
+pre-commit install
+
+# Run all pre-commit checks manually
+pre-commit run --all-files
+
+# Run full local CI check
+./scripts/local-ci-check.sh
+```
+
 **Important**: Always run these checks after making any code changes and before pushing commits. This prevents CI failures and reduces PR review cycles.
 
 ## Definition of a "Complete" Pull Request
@@ -48,37 +98,37 @@ A pull request is considered complete when it meets all of these criteria:
 
 ### Functional Requirements
 
-- [ ] All acceptance criteria from the original issue are satisfied
-- [ ] The implementation solves the stated problem without introducing new issues
-- [ ] Edge cases and error conditions are properly handled
+* [ ] All acceptance criteria from the original issue are satisfied
+* [ ] The implementation solves the stated problem without introducing new issues
+* [ ] Edge cases and error conditions are properly handled
 
 ### Code Quality
 
-- [ ] Code follows the principles in `meta/DEVELOPMENT_PHILOSOPHY.md`
-- [ ] Changes are minimal and surgical — only necessary lines are modified
-- [ ] Code is readable, well-named, and includes comments explaining complex logic
-- [ ] No unnecessary complexity or premature optimization
-- [ ] Code passes local formatting and linting checks
+* [ ] Code follows the principles in `meta/DEVELOPMENT_PHILOSOPHY.md`
+* [ ] Changes are minimal and surgical — only necessary lines are modified
+* [ ] Code is readable, well-named, and includes comments explaining complex logic
+* [ ] No unnecessary complexity or premature optimization
+* [ ] Code passes local formatting and linting checks
 
 ### Testing & Validation
 
-- [ ] New functionality is covered by automated tests that pass
-- [ ] All existing tests continue to pass
-- [ ] Manual verification confirms the feature works as expected
-- [ ] Performance implications have been considered
+* [ ] New functionality is covered by automated tests that pass
+* [ ] All existing tests continue to pass
+* [ ] Manual verification confirms the feature works as expected
+* [ ] Performance implications have been considered
 
 ### Documentation & Process
 
-- [ ] Relevant ADRs are referenced in the PR description
-- [ ] Any new architectural decisions are documented as proposed ADRs
-- [ ] Commit messages are descriptive and follow conventional format
-- [ ] The PR description clearly explains what changed and why
+* [ ] Relevant ADRs are referenced in the PR description
+* [ ] Any new architectural decisions are documented as proposed ADRs
+* [ ] Commit messages are descriptive and follow conventional format
+* [ ] The PR description clearly explains what changed and why
 
 ### Integration
 
-- [ ] All CI/CD checks pass
-- [ ] Code integrates cleanly with existing systems
-- [ ] No conflicts with other ongoing work
-- [ ] The `main` branch remains in a deployable state
+* [ ] All CI/CD checks pass
+* [ ] Code integrates cleanly with existing systems
+* [ ] No conflicts with other ongoing work
+* [ ] The `main` branch remains in a deployable state
 
 Remember: The goal is not just working code, but maintainable, understandable code that future contributors (human and AI) can build upon confidently.

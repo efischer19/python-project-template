@@ -1,8 +1,8 @@
 """Tests for {{ cookiecutter.lib_name }}."""
 
-from {{ cookiecutter.package_name }} import *  # noqa: F401, F403
+import {{ cookiecutter.package_name }}
 
 
 def test_placeholder():
     """Placeholder test — replace with real tests."""
-    assert True
+    assert {{ cookiecutter.package_name }} is not None

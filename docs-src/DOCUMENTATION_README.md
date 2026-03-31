@@ -6,7 +6,7 @@
 ## Overview
 
 This project uses **[MkDocs](https://www.mkdocs.org/)** with the
-**[Material for MkDocs](https://squidfundly.github.io/mkdocs-material/)**
+**[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)**
 theme to generate a static documentation site from Markdown source files in
 the `docs-src/` directory.
 

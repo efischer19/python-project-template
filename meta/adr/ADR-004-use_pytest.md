@@ -1,6 +1,6 @@
 ---
 title: "ADR-004: Use pytest for Testing"
-status: "Proposed"
+status: "Accepted"
 date: "2026-03-31"
 tags:
   - "python"

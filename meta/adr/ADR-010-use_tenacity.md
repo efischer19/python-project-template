@@ -1,6 +1,6 @@
 ---
 title: "ADR-010: Use Tenacity for Retry Logic"
-status: "Proposed"
+status: "Accepted"
 date: "2026-03-31"
 tags:
   - "python"

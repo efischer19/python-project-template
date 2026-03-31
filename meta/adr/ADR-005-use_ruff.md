@@ -1,6 +1,6 @@
 ---
 title: "ADR-005: Use Ruff for Linting and Formatting"
-status: "Proposed"
+status: "Accepted"
 date: "2026-03-31"
 tags:
   - "python"

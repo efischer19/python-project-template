@@ -1,6 +1,6 @@
 ---
 title: "ADR-009: Shared Library Versioning Strategy"
-status: "Proposed"
+status: "Accepted"
 date: "2026-03-31"
 tags:
   - "python"

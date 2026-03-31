@@ -1,6 +1,6 @@
 ---
 title: "ADR-008: Use JSON Structured Logging"
-status: "Proposed"
+status: "Accepted"
 date: "2026-03-31"
 tags:
   - "python"

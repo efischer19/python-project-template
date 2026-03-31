@@ -1,6 +1,6 @@
 ---
 title: "ADR-011: Use Click for CLI Applications"
-status: "Proposed"
+status: "Accepted"
 date: "2026-03-31"
 tags:
   - "python"

@@ -1,6 +1,6 @@
 ---
 title: "ADR-013: Use Piwheels for ARM Docker Builds"
-status: "Proposed"
+status: "Accepted"
 date: "2026-03-31"
 tags:
   - "docker"

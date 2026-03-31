@@ -1,6 +1,6 @@
 ---
 title: "ADR-006: Use Docker for Containerization"
-status: "Proposed"
+status: "Accepted"
 date: "2026-03-31"
 tags:
   - "docker"

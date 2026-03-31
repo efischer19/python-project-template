@@ -1,6 +1,6 @@
 ---
 title: "ADR-007: Monorepo /apps Structure"
-status: "Proposed"
+status: "Accepted"
 date: "2026-03-31"
 tags:
   - "architecture"

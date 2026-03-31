@@ -1,6 +1,6 @@
 ---
 title: "ADR-012: Use MkDocs for Documentation"
-status: "Proposed"
+status: "Accepted"
 date: "2026-03-31"
 tags:
   - "documentation"

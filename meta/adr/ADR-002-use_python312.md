@@ -1,6 +1,6 @@
 ---
 title: "ADR-002: Use Python 3.12+"
-status: "Proposed"
+status: "Accepted"
 date: "2026-03-31"
 tags:
   - "python"

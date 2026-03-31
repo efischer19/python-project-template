@@ -1,5 +1,5 @@
 ---
-title: "ADR-008: Monorepo /apps Structure"
+title: "ADR-007: Monorepo /apps Structure"
 status: "Proposed"
 date: "2026-03-31"
 tags:

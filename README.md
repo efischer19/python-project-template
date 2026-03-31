@@ -48,7 +48,7 @@ For more details on GitHub template repositories, see the
 | [ADR-004](meta/adr/ADR-004-use_pytest.md) | pytest for testing |
 | [ADR-005](meta/adr/ADR-005-use_ruff.md) | Ruff for linting and formatting |
 | [ADR-006](meta/adr/ADR-006-use_docker.md) | Docker for containerization |
-| [ADR-008](meta/adr/ADR-008-monorepo_apps_structure.md) | Monorepo /apps structure |
+| [ADR-007](meta/adr/ADR-007-monorepo_apps_structure.md) | Monorepo /apps structure |
 
 See `meta/adr/` for the full list of Architecture Decision Records.
 

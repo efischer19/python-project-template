@@ -1,5 +1,5 @@
 ---
-title: "ADR-022: Use Click for CLI Applications"
+title: "ADR-011: Use Click for CLI Applications"
 status: "Proposed"
 date: "2026-03-31"
 tags:

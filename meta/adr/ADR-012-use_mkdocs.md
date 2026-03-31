@@ -1,5 +1,5 @@
 ---
-title: "ADR-023: Use MkDocs for Documentation"
+title: "ADR-012: Use MkDocs for Documentation"
 status: "Proposed"
 date: "2026-03-31"
 tags:

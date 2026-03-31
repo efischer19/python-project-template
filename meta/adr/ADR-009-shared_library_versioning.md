@@ -1,5 +1,5 @@
 ---
-title: "ADR-016: Shared Library Versioning Strategy"
+title: "ADR-009: Shared Library Versioning Strategy"
 status: "Proposed"
 date: "2026-03-31"
 tags:

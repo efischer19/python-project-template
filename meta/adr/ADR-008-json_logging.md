@@ -1,5 +1,5 @@
 ---
-title: "ADR-015: Use JSON Structured Logging"
+title: "ADR-008: Use JSON Structured Logging"
 status: "Proposed"
 date: "2026-03-31"
 tags:

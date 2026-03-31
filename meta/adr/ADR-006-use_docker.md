@@ -84,4 +84,4 @@ COPY src/ ./src/
 * **Future Implications:** Cloud-specific Docker patterns (e.g., ECR
   integration, Lambda container images) are handled by downstream
   blueprints, not this template. See also
-  [ADR-029](ADR-029-piwheels_arm_builds.md) for ARM build optimization.
+  [ADR-013](ADR-013-piwheels_arm_builds.md) for ARM build optimization.

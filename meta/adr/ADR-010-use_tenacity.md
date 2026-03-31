@@ -1,5 +1,5 @@
 ---
-title: "ADR-021: Use Tenacity for Retry Logic"
+title: "ADR-010: Use Tenacity for Retry Logic"
 status: "Proposed"
 date: "2026-03-31"
 tags:

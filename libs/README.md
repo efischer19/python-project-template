@@ -30,6 +30,6 @@ libs/
 * Use [pytest](../meta/adr/ADR-004-use_pytest.md) for testing
 * Follow the [Development Philosophy](../meta/DEVELOPMENT_PHILOSOPHY.md) for
   code quality standards
-* Follow [Shared Library Versioning](../meta/adr/ADR-016-shared_library_versioning.md)
+* Follow [Shared Library Versioning](../meta/adr/ADR-009-shared_library_versioning.md)
   conventions
 * Keep libraries focused — one responsibility per library

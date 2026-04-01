@@ -22,7 +22,11 @@ nav:
   - Development:
       - Contributing: CONTRIBUTING.md
       - Development Philosophy: DEVELOPMENT_PHILOSOPHY.md
+      - Local Development Dependencies: LOCAL_DEVELOPMENT_DEPENDENCIES.md
       - Feature Request Automation: feature-request-automation.md
+  - Guides:
+      - Documentation Guide: DOCUMENTATION_README.md
+      - Shared Library Versioning: SHARED_LIBRARY_VERSIONING.md
 
 markdown_extensions:
   - admonition

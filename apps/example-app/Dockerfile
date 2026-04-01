@@ -30,8 +30,8 @@ RUN cd apps/example-app \
        --without-hashes \
        --format requirements.txt \
        --output /tmp/requirements.txt \
-    && (grep -vE "^(-e |example-lib)" /tmp/requirements.txt \
-       > /tmp/app-requirements.txt || : > /tmp/app-requirements.txt)
+    && grep -vE "^(-e |example-lib)" /tmp/requirements.txt \
+       > /tmp/app-requirements.txt || true
 
 # Pre-build wheels for reproducible, offline installation in the runtime stage
 RUN pip wheel --no-cache-dir --wheel-dir /wheels -r /tmp/app-requirements.txt

@@ -11,7 +11,7 @@
 # Resolves dependencies and pre-builds wheels for reproducible installs.
 FROM python:3.12-slim AS builder
 
-RUN pip install --no-cache-dir poetry
+RUN pip install --no-cache-dir poetry poetry-plugin-export
 
 WORKDIR /build
 
@@ -30,8 +30,8 @@ RUN cd apps/example-app \
        --without-hashes \
        --format requirements.txt \
        --output /tmp/requirements.txt \
-    && grep -vE "^(-e |example-lib)" /tmp/requirements.txt \
-       > /tmp/app-requirements.txt || true
+    && (grep -vE "^(-e |example-lib)" /tmp/requirements.txt \
+       > /tmp/app-requirements.txt || : > /tmp/app-requirements.txt)
 
 # Pre-build wheels for reproducible, offline installation in the runtime stage
 RUN pip wheel --no-cache-dir --wheel-dir /wheels -r /tmp/app-requirements.txt

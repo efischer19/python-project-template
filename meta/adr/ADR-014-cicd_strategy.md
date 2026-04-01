@@ -1,6 +1,6 @@
 ---
 title: "ADR-014: CI/CD Strategy for Python Monorepo"
-status: "Proposed"
+status: "Accepted"
 date: "2026-04-01"
 tags:
   - "ci-cd"

@@ -11,7 +11,7 @@
 # Resolves dependencies and pre-builds wheels for reproducible installs.
 FROM python:3.12-slim AS builder
 
-RUN pip install --no-cache-dir poetry
+RUN pip install --no-cache-dir poetry poetry-plugin-export
 
 WORKDIR /build
 

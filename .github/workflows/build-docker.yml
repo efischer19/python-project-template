@@ -40,7 +40,7 @@ jobs:
             | gzip > /tmp/${{ matrix.image-name }}.tar.gz
 
       - name: Upload Docker image artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: docker-image-${{ matrix.image-name }}
           path: /tmp/${{ matrix.image-name }}.tar.gz

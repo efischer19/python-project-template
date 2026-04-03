@@ -10,7 +10,7 @@ packages = [{include = "example_lib"}]
 python = "^3.12"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.0"
+pytest = "^9.0"
 ruff = "^0.11"
 
 [build-system]
